@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
 
-function Layout() {
+const Layout= ()=> {
   return (
     <div>
-      <header>Header Here</header>
-      <Outlet /> {/* Nested route content renders here */}
+      <h1>Header Here</h1>
+      <div>
+        <Outlet/>
+        
+      </div>
     </div>
   );
 }
-
 export default Layout;
